@@ -11333,8 +11333,7 @@ p.lead {
 }
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 500;
-  transform: rotate(-90deg);
-  margin-bottom: 4em;
+
 }
 #sideNav .navbar-toggler:focus {
   outline-color: #d48a6e;
@@ -11379,6 +11378,8 @@ p.lead {
   }
   #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
     display: block;
+    transform: rotate(-90deg);
+    margin-bottom: 4em;
   }
 }
 .social-icons .social-icon {
