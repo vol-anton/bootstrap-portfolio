@@ -2993,13 +2993,12 @@ textarea.form-control-lg {
 }
 
 .btn {
-  display: inline-block;
+  display: block;
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
   text-align: center;
   text-decoration: none;
-  vertical-align: middle;
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -3246,8 +3245,8 @@ textarea.form-control-lg {
 }
 .btn-dark:hover {
   color: #fff;
-  background-color: #1c1f23;
-  border-color: #1a1e21;
+  background-color: #368098;
+  border-color: #368098;
 }
 .btn-check:focus + .btn-dark, .btn-dark:focus {
   color: #fff;
@@ -3941,7 +3940,8 @@ textarea.form-control-lg {
 }
 
 .nav-link {
-  display: block;
+  display: flex;
+  justify-content: center;
   padding: 0.5rem 1rem;
   color: #bd5d38;
   text-decoration: none;
@@ -11384,6 +11384,9 @@ p.lead {
     transform: rotate(-90deg);
     margin-bottom: 4em;
   }
+  .card {
+    width: 50% !important;
+  }
 }
 .social-icons .social-icon {
   display: inline-flex;
@@ -11401,7 +11404,7 @@ p.lead {
   margin-right: 0;
 }
 .social-icons .social-icon:hover {
-  background-color: darkkhaki;
+  background-color: #368098;
 }
 
 .dev-icons {
@@ -11411,6 +11414,7 @@ p.lead {
 section.resume-section {
   display: flex;
   align-items: flex-start;
+  flex-direction: column;
   padding-left: 1rem;
   padding-right: 1rem;
   padding-top: 5rem;
@@ -11432,6 +11436,8 @@ section.resume-section .resume-section-content {
     padding-right: 3rem;
     padding-top: 5rem;
     padding-bottom: 5rem;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
   #sideNav {
     padding-top: 10rem;
